@@ -16,7 +16,7 @@ public class Invoice {
 
     public int calculateTotal(){
         // 1 reason : here we can change implementation  by adding  gst and discount in calculating price
-        int price = marker.price * quantity;
+        int price = marker.getPrice() * quantity;
         return price;
     }
 
